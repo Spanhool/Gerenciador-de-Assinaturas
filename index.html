@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SubTrack | Gerenciador de Assinaturas</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>SubTrack</h1>
+
+      <button type="button" id="nova-assinatura">+ Nova assinatura</button>
+    </header>
+
+    <main class="container">
+      <section class="apresentacao">
+        <h2>Minhas assinaturas</h2>
+        <p>Gerencie seus serviços e gastos recorrentes.</p>
+      </section>
+
+      <section class="resumo" aria-label="Resumo das assinaturas">
+        <article class="card-resumo">
+          <h3>Gasto mensal</h3>
+          <p id="gasto-mensal">R$ 0,00</p>
+        </article>
+
+        <article class="card-resumo">
+          <h3>Assinaturas ativas</h3>
+          <p id="total-assinaturas">0</p>
+        </article>
+      </section>
+
+      <section class="assinaturas" aria-labelledby="titulo-assinaturas">
+        <h2 id="titulo-assinaturas">Assinaturas ativas</h2>
+
+        <div id="lista-assinaturas">
+          <p>Nenhuma assinatura cadastrada.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="src/js/app.js"></script>
+  </body>
+</html>
